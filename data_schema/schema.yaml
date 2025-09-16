@@ -1,0 +1,135 @@
+# schema.yaml - enhanced for validation
+description: "Schema for Credit Card Fraud Detection (Kaggle creditcard.csv)"
+target_column: Class
+
+columns:
+  Time:
+    dtype: numeric
+    nullable: false
+    description: Seconds elapsed from first transaction (numeric)
+
+  V1:
+    dtype: numeric
+    nullable: false
+    description: PCA component 1
+  V2:
+    dtype: numeric
+    nullable: false
+    description: PCA component 2
+  V3:
+    dtype: numeric
+    nullable: false
+    description: PCA component 3
+  V4:
+    dtype: numeric
+    nullable: false
+    description: PCA component 4
+  V5:
+    dtype: numeric
+    nullable: false
+    description: PCA component 5
+  V6:
+    dtype: numeric
+    nullable: false
+    description: PCA component 6
+  V7:
+    dtype: numeric
+    nullable: false
+    description: PCA component 7
+  V8:
+    dtype: numeric
+    nullable: false
+    description: PCA component 8
+  V9:
+    dtype: numeric
+    nullable: false
+    description: PCA component 9
+  V10:
+    dtype: numeric
+    nullable: false
+    description: PCA component 10
+  V11:
+    dtype: numeric
+    nullable: false
+    description: PCA component 11
+  V12:
+    dtype: numeric
+    nullable: false
+    description: PCA component 12
+  V13:
+    dtype: numeric
+    nullable: false
+    description: PCA component 13
+  V14:
+    dtype: numeric
+    nullable: false
+    description: PCA component 14
+  V15:
+    dtype: numeric
+    nullable: false
+    description: PCA component 15
+  V16:
+    dtype: numeric
+    nullable: false
+    description: PCA component 16
+  V17:
+    dtype: numeric
+    nullable: false
+    description: PCA component 17
+  V18:
+    dtype: numeric
+    nullable: false
+    description: PCA component 18
+  V19:
+    dtype: numeric
+    nullable: false
+    description: PCA component 19
+  V20:
+    dtype: numeric
+    nullable: false
+    description: PCA component 20
+  V21:
+    dtype: numeric
+    nullable: false
+    description: PCA component 21
+  V22:
+    dtype: numeric
+    nullable: false
+    description: PCA component 22
+  V23:
+    dtype: numeric
+    nullable: false
+    description: PCA component 23
+  V24:
+    dtype: numeric
+    nullable: false
+    description: PCA component 24
+  V25:
+    dtype: numeric
+    nullable: false
+    description: PCA component 25
+  V26:
+    dtype: numeric
+    nullable: false
+    description: PCA component 26
+  V27:
+    dtype: numeric
+    nullable: false
+    description: PCA component 27
+  V28:
+    dtype: numeric
+    nullable: false
+    description: PCA component 28
+
+  Amount:
+    dtype: numeric
+    nullable: false
+    description: Transaction amount (>= 0)
+    constraints:
+      min: 0.0
+
+  Class:
+    dtype: integer
+    nullable: false
+    description: Target label (0 = legitimate, 1 = fraud)
+    allowed_values: [0, 1]
